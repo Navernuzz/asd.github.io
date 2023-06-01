@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompramosTuPiel</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./CTP.png" type="image/png">
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <p>CompramosTuPiel.com</p>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./conocenos.html">Conocenos</a></li>
+                </ul>
+            </div>
+    </header>
+    <div class="body">
+        <div class="Left">
+            <h3>--Productos destacados</h3>
+            <ul>
+              <li>
+                <img class="imagesS" src="skin1.jpg" alt="Producto 1">
+                <h5>Piel curtida de alta calidad, artesania tatuada.</h4>
+                <p>Precio: $780.000</p>
+              </li>
+              <li>
+                <img class="imagesS" src="skin2.jpg" alt="Producto 2">
+                <h5>Exclusiva piel de mas de 60 años.</h4>
+                <p>Precio: $500.000</p>
+              </li>
+            </ul>
+        </div>
+        <div class="Right">
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="product"><img src="skin3.jpg" alt="" width="220" height="200"></div>
+                  <div class="product"><img src="skin4.jpg" alt="" width="220" height="200"></div>
+                  <div class="product"><img src="skin5.jpg" alt="" width="220" height="200"></div>
+                  <div class="product"><img src="skin6.jpg" alt="" width="220" height="200"></div>
+                  <!-- Agrega más productos según sea necesario -->
+                </div>
+            </div>
+            <div class="slider-container2">
+              <div class="slider">
+                <div class="product"><img src="skin7.jpg" alt="" width="220" height="200"></div>
+                <div class="product"><img src="skin8.jpg" alt="" width="220" height="200"></div>
+                <div class="product"><img src="skin9.jpg" alt="" width="220" height="200"></div>
+                <div class="product"><img src="skin10.jpg" alt="" width="220" height="200"></div>
+                <!-- Agrega más productos según sea necesario -->
+              </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados CompramosTuPiel.com © 1998</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').css('transform', 'translateX(0)');
+          
+            setInterval(function() {
+              $('.slider').animate({ 'margin-left': '-210px' }, 800, function() {
+                $(this).css('margin-left', '0');
+                $(this).append($(this).children().first());
+              });
+            }, 3000);
+          });
+    </script>
+</body>
+</html>
+

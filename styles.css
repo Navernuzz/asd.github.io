@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    font-family: fantasy;
+}
+header{
+    height: 50px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border-top: 3px solid black;
+}
+
+.logo{
+    font-weight: bolder;
+    font-size: 35px;
+    text-align:left;
+    font-stretch: condensed;
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    animation: colorChange 5s infinite;
+    -webkit-text-stroke: 1px black;
+    margin-top: -35px;
+}
+@keyframes colorChange {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: yellow;
+    }
+    75% {
+      color: green;
+    }
+    100% {
+      color: orange;
+    }
+  }
+
+  @keyframes colorChange2 {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: yellow;
+    }
+    75% {
+      background-color: green;
+    }
+    100% {
+      background-color: orange;
+    }
+  }
+
+  @keyframes colorChange3 {
+    0% {
+      border: 5px solid red;
+    }
+    25% {
+      border: 5px solid blue;
+    }
+    50% {
+      border: 5px solid purple;
+    }
+    75% {
+      border: 5px solid green;
+    }
+    100% {
+      border: 5px solid orange;
+    }
+  }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li{
+    display: inline;
+    margin-right: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+.navbar li:hover{
+    display: inline;
+    margin-right: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    animation: colorChange2 5s infinite;
+}
+.navbar{    
+    width:500px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    height: 127%;
+    margin-top: -10px;
+    background-color: yellow;
+    border-right: 6px solid rgb(143, 110, 0);
+    border-top: 6px solid rgb(255, 255, 126);
+    border-bottom: 6px solid rgb(143, 110, 0);
+    border-left: 6px solid rgb(255, 255, 126);
+}
+
+.body{
+    height: 800px;
+    display: flex;
+}
+
+.Left{
+    width: 350px;
+    height: 92,5%;
+    border-right: 10px solid rgb(143, 110, 0);
+    border-top: 10px solid rgb(255, 255, 126);
+    background-color: yellow;
+}
+
+.Right{
+    width: auto;
+    height: 92,5%;
+    padding: 25px;
+}
+
+.imagesS{
+  width: 250px; 
+  height: 150px;
+  animation: colorChange3 5s infinite;
+  border-radius: 5px;
+}
+
+.title{
+  text-align: center;
+  font-size: 80px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -50px;
+}
+
+.paragraph1{
+  text-align: center;
+  font-size: 27px;
+  font-family: 'Segoe UI', cursive;
+  margin-top: -50px;
+  font-weight: bolder;
+  color: rgb(32, 32, 32);
+}
+
+.paragraph{
+  text-align: center;
+  font-size: 35px;
+}
+
+.slider-container {
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
+  background-color: yellow;
+  border-right: 8px solid rgb(143, 110, 0);
+  border-top: 8px solid rgb(255, 255, 128);
+  border-bottom: 8px solid rgb(143, 110, 0);
+  border-left: 8px solid rgb(255, 255, 126);
+  padding: 10px;
+  margin:auto
+}
+
+.slider-container2 {
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
+  background-color: yellow;
+  border-right: 8px solid rgb(143, 110, 0);
+  border-top: 8px solid rgb(255, 255, 128);
+  border-bottom: 8px solid rgb(143, 110, 0);
+  border-left: 8px solid rgb(255, 255, 126);
+  padding: 10px;
+  margin-top: 200px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.product {
+  width: 220px;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 200px;
+  color: #000;
+}
+
+.explanation{
+  text-align: center;
+  padding: 25px;
+  margin: 200px;
+}
+
+.button{
+  width: 100px;
+  border-radius: 5px;
+  margin: auto;
+  animation: colorChange2 5s infinite;
+  font-size: 25px;
+}
+
+.button:hover{
+  width: 100px;
+  border-radius: 5px;
+  margin: auto;
+  animation: colorChange3 5s infinite;
+  font-size: 25px;
+}
